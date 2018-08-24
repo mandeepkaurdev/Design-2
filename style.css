@@ -1,0 +1,52 @@
+body {
+    height: 100vh;
+    background-color: gray; 
+}
+
+header {
+    font-family: 'Sonsie One';
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+main  {
+    display: grid;
+    grid-template-columns: repeat(4, 90px);
+    grid-gap: 5px;
+    justify-content: center;
+}
+
+img {
+    grid-column: span 2;
+    border-radius: 20px;
+    max-height: 200px;
+    max-width: 175px;
+    }
+
+    @media only screen and (min-width: 600px) {
+
+        header {
+            text-align: left;
+            margin-left: 100px;
+        }
+
+    main {
+        grid-template-columns:repeat(9, 90px);
+    }
+
+  }
+
+  @media only screen and (min-width: 1200px) {
+
+    header {
+        text-align: left;
+        margin-left: 100px;
+    }
+
+    main {
+        grid-template-columns:repeat(12, 90px);
+    }
+    
+  }
